@@ -1,0 +1,376 @@
+:root {
+    --primaryLightColor: #d4e6a5;
+    --primaryColor: #419406;
+    --primaryColor2: rgb(128, 214, 67) 4;
+    --primaryDarkColor: #c02c03;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --mainBackground: #141414;
+    --mainOverlay: rgba(35, 10, 36, 0.4);
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --darkGrey: #afafaf;
+    --mainRed: #bd0303;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.13rem;
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    --mainBorderRadius: 0.25rem;
+    --smallWidth: 85vw;
+    --maxWidth: 40rem;
+    --fullWidth: 1170px;
+    --transition: all 0.3s linear;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+  
+  /* 
+    Global Styles 
+    
+    */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: var(--mainWhite);
+    background: var(--mainBackground);
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--slantedFont);
+    margin-bottom: 1.25rem;
+    letter-spacing: var(--mainSpacing);
+  }
+  p {
+    margin-bottom: 1.25rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: var(--mainBlack);
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .underline {
+    border-radius: 3px;
+    width: 15%;
+    height: 4px;
+    background-color: var(--mainWhite);
+    margin: 0 auto;
+    margin-top: -40px;
+    margin-bottom: 50px;
+  }
+  
+  /*
+    Navbar
+  */
+  
+  .navbar {
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    padding: 1rem 0;
+    box-shadow: var(--lightShadow);
+  }
+  
+  .nav-center {
+    display: flex;
+    background: var(--primaryColor);
+    justify-content: space-around;
+    align-items: center;
+    max-width: var(--fullWidth);
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .img-logo {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: var(--mainWhite);
+    font-size: 1.1rem;
+    transition: var(--mainTransition);
+  }
+  
+  .nav-links a:hover {
+    color: black;
+    text-decoration: blink;
+    background-color: var(--primaryLightColor);
+  }
+  
+  .toggle {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    font-size: 2rem;
+    color: var(--mainWhite);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  .section-title {
+    color: var(--primaryColor);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /*
+    Home
+  */
+  
+  .img-container {
+    width: 100%;
+    display: block;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .img-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
+  
+  .img-home img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--mainBorderRadius);
+  }
+  
+  .section-home {
+    text-align: center;
+    color: var(--mainWhite);
+    padding: 1rem 0;
+  }
+  
+  .section-home h4 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  .section-span-home {
+    color: var(--primaryColor);
+  }
+  
+  /* Button styles */
+  .button {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background: var(--mainBackground);
+    color: var(--mainWhite);
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primaryColor);
+    border-radius: var(--mainBorderRadius);
+    cursor: pointer;
+    margin: 40px auto 80px auto;
+    transition: var(--mainTransition);
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+  }
+  
+  .button:hover {
+    background: var(--mainBlack);
+  }
+  
+  .link-button {
+    color: var(--mainWhite);
+    text-decoration: none;
+  }
+  
+  /*Footer*/
+  .footer {
+    text-align: center;
+    height: 3.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--primaryColor);
+    color: var(--mainBlack);
+  }
+  
+  .footer h5 {
+    margin: 0.5rem 0;
+    color: var(--mainBlack);
+    font-weight: 800px;
+  }
+  
+  .footer a {
+    color: var(--primaryLightColor);
+    text-decoration: none;
+    transition: color var(--mainTransition);
+  }
+  
+  /* Names Page  */
+  .section-span-names {
+    color: var(--mainWhite);
+  }
+  
+  .article-home p {
+    margin-bottom: 1rem;
+  }
+  
+  .section-name-header {
+    color: var(--primaryColor);
+  }
+  
+  .section-span {
+    color: #fff;
+  }
+  
+  /* Rasul */
+  
+  .section-info {
+    margin-bottom: 1rem;
+    line-height: 2;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  
+  .section-prophets {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .section-prophets li {
+    margin-bottom: var(--mainSpacing);
+    margin-left: 120px;
+  }
+  
+  /* Holy Books */
+  .section-HolyBooks {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  /* Months */
+  .section-months {
+    text-align: center;
+    line-height: 2.5;
+  }
+  
+  /* About us */
+  
+  /* AL-Qur'an section */
+  .section-label {
+    display: inline;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+  
+  .section-label-span {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .section-label-input {
+    width: 85px;
+    height: 30px;
+    padding: 8px 12px;
+    border: 2px solid var(--primaryColor);
+    border-radius: var(--mainBorderRadius);
+    background-color: var(--mainWhite);
+    color: var(--mainBlack);
+    font-size: 1rem;
+    transition: var(--mainTransition);
+  }
+  
+  .section-label-input:focus {
+    outline: none;
+    border-color: var(--primaryColor);
+    box-shadow: 0 0 8px 0 var(--primaryColor);
+  }
+  
+  .section-title-header {
+    color: var(--mainWhite);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .section-title-subheader {
+    color: var(--mainWhite);
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .section-info-data div {
+    border-bottom: 0.5px solid var(--mainWhite);
+    padding: 7px;
+    margin-bottom: 15px;
+    direction: rtl;
+    text-align: center;
+  }
+  
+  .section-ayah-container {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 0 0 25px 25px;
+  }
+  
+  .section-info-number {
+    background-color: var(--primaryColor);
+    color: var(--mainBlack);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .section-info-text {
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  
