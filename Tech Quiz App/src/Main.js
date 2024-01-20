@@ -14,7 +14,7 @@ const Main = () => {
         />
       </article>
       <section>
-        <h2> Instructions :</h2>
+        <h3> Instructions :</h3>
         <p> Select the right option of the four choices</p>
         <p style={{ fontWeight: "bold" }}>
           You have 20 seconds for each question!
