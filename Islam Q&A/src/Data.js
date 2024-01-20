@@ -1,7 +1,7 @@
 const questions = [
     {
       id: 1,
-      title: 'What are the Five Pillars of Islam?',
+      title: 'What are the Five Pillars in Islam?',
       info:
         'The Five Pillars of Islam are the five basic acts of worship that are considered mandatory for Muslims. They are the declaration of faith (Shahada), prayer (Salah), giving of alms (Zakat), fasting (Sawm), and pilgrimage to Mecca (Hajj)'
     },
@@ -12,7 +12,7 @@ const questions = [
     },
     {
       id: 3,
-      title: 'What is the difference between Sunni and Shia Islam?',
+      title: 'What is the difference between Sunni and Shia Islam or Muslims?',
       info:'The main difference between Sunni and Shia Islam lies in their beliefs regarding the rightful successor to the Prophet Muhammad Sunni Muslims believe that the first four caliphs, including Abu Bakr, Umar, Uthman, and Ali, were the rightful successors to the Prophet Muhammad. They make up the majority of the Muslim population while the Shia Muslims, on the other hand, believe that Ali, the cousin and son-in-law of the Prophet Muhammad, was the rightful successor. They believe in the concept of Imamah, which asserts that leadership should have passed directly to Ali and his descendants'
     },
     {
