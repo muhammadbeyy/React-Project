@@ -1,8 +1,8 @@
 export default [
     {
       id: 1,
-      name: 'Lionel Messi',
-      age: 35,
+      name: 'Lisandro Martinez',
+      age: 36,
       country: 'Argentine',
       stats: 'Apps:55 Goals:32 Assists:25',
       image:
